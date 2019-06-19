@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="mem-banner" style="background-image:url(/static/upload/img11.jpg);"></div>
+
+
+<div class="memwrap wrap clearfix">
+  <div class="section fl">
+    <div class="location tr"><a href="mem.html">基本资料</a><a href="pwd.html">修改密码</a><a href="binding.html" class="current">帐号绑定</a></div>
+    <div class="pd20">
+      <table class="baseinfo">
+        <tr>
+          <td width="50%">
+            <div class="icoimg"><img src="/static/images/img5.jpg"></div>
+            <div class="infotxt">你的邮箱帐号：未绑定<p class="mt10"><a href="Email-binding.html" class="button btn-bind">立即去绑定</a></p></div>
+          </td>
+          <td>
+            <div class="icoimg"><img src="/static/images/img6.jpg"></div>
+            <div class="infotxt">你的手机号码：未绑定<p class="mt10"><a href="Phone.html" class="button btn-bind">立即去绑定</a></p></div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="icoimg"><img src="/static/images/img7.jpg"></div>
+            <div class="infotxt">实名认证：未认证<p class="mt10"><a href="Verified.html" class="button btn-bind">立即去认证</a></p></div>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="aside fr">
+    <div class="pd15">
+      <div class="userimg"><img src="/static/upload/img12.png"><i></i></div>
+      <div class="user-level tc">大郭郭呐 <em></em><em></em><em></em></div>
+      <div class="tc"><a href="javascript:;" class="button btn-control btn-follow"> + 关注</a><a href="javascript:;" class="button btn-control btn-sent"><em class="myfont f18">&#xe63f;</em> 私信</a></div>
+      <div class="Praise tc">老师，中国，陕西 <em>&#xe61d;</em><em>&#xe61d;</em><em>&#xe61d;</em></div>
+      
+      <div class="txtwrap tc"><h1 class="f16">个人简介</h1>既能安静又能活泼，既能淑女又能犯二，<br>既能女汉子又能小清新～～～</div>
+      <h1 class="f16">关注 4</h1>
+      <ul class="followlist clearfix">
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+      </ul>
+      <h1 class="f16">粉丝 4</h1>
+      <ul class="followlist bd0 clearfix">
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+        <li><a href="#"><img src="/static/upload/img12.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/Action.js"></script>
+
+<script src="/static/js/chosen.jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function($){
+	//select 样式美化
+	 var config = {
+		'.chosen-select-no-single' : {disable_search_threshold:10}
+	}
+	for (var selector in config) {
+		$(selector).chosen(config[selector]);
+	}
+});
+</script>
+{% endblock body %}
